@@ -671,11 +671,277 @@
 // };
 // vallue("bold@example.com");
 
-const vallue = (items) => {
-  const first = items.shift();
-  const last = items.pop();
-  items.unshift(last);
-  items.push(first);
-  console.log(items);
+// const vallue = (items) => {
+//   const first = items.shift();
+//   const last = items.pop();
+//   items.unshift(last);
+//   items.push(first);
+//   console.log(items);
+// };
+// vallue([1, 2, 3, 4]);
+
+// 12r bodlogo
+
+// const delay = (delay) => {
+// console.log("Сайн байна уу!");
+
+// };
+// const time = setTimeout(delay, 1000)
+
+// const delay = (firstDelay, secondDelay) => {
+//   setTimeout(() => {
+//     console.log("Эхний мэдэгдэл");
+//   }, firstDelay);
+//   setTimeout(() => {
+//     console.log("Хоёр дахь мэдэгдэл");
+//   }, secondDelay);
+// };
+
+// delay(1000, 2000);
+
+// const delay = (stepDelay) => {
+//   setTimeout(() => {
+//     console.log("Номоо нээ");
+//   }, stepDelay);
+//   setTimeout(() => {
+//     console.log("Бодлогоо унш");
+//   }, stepDelay*2);
+//   setTimeout(() => {
+//     console.log("Бодож эхэл");
+//   }, stepDelay*3);
+// };
+// delay(1000);
+
+// const delay = (a, b) => {
+//   console.log("Тооцоолж байна...");
+//   setTimeout(() => {
+//     console.log(a+b);
+//   }, 2000);
+// };
+// delay(12, 8);
+
+// console.log("Хүлээгдэж байна");
+// const delay = (nextStatus) => {
+//     setTimeout(() => {
+//       console.log(nextStatus);
+//     }, 2000);
+// };
+// delay ("Баталгаажсан")
+
+// const delay = (notification) => {
+//     setTimeout(() => {
+//       notification.isRead = true;
+//       console.log(notification);
+//     }, 3000);
+// };
+// delay ({ text: "Хичээл", isRead: false })
+
+// const delay = (cart, item) => {
+//     setTimeout(() => {
+//       cart.push(item)
+//       console.log(cart);
+//     }, 2000);
+// };
+// delay (["Талх"], "Сүү")
+
+// const delay = (hasHomework, delay) => {
+//   if (hasHomework) {
+//     setTimeout(() => {
+//       console.log("Гэрийн даалгавраа хийгээрэй");
+//     }, delay);
+//   }
+// };
+// delay(true, 1000);
+
+// const delay = (isSubmitted, delay) => {
+//   setTimeout(() => {
+//     if (isSubmitted) {
+//       console.log("Даалгавар илгээгдсэн");
+//     } else {
+//       console.log("Даалгавраа илгээнэ үү");
+//     }
+//   }, delay);
+// };
+// delay(false, 1000);
+
+// const delay = (time) => {
+//   const timer = setTimeout(() => {
+//     console.log("Мэдэгдэл");
+//   }, time);
+//   clearTimeout(timer);
+//   console.log("Мэдэгдлийг цуцаллаа")
+// };
+// delay(2000);
+
+// const delay = (alarmDelay, cancelDelay) => {
+//   const timer = setTimeout(() => {
+//     console.log("seruuleg");
+//   }, alarmDelay);
+//   clearTimeout(timer);
+//   setTimeout(() => {
+//     console.log("Сэрүүлгийг унтраалаа")
+//   }, cancelDelay);
+
+// };
+// delay(5000, 2000);
+
+// let count = 0;
+// let limit = 3;
+// const delay = () => {
+//   count++;
+//   console.log("Сайн уу");
+
+//   if (count >= limit) {
+//     clearInterval(timer);
+//   }
+// };
+
+// const timer = setInterval(delay, 1000);
+
+// let count = 0;
+// let limit = 3;
+// const delay = () => {
+//   count++;
+// console.log(count);
+
+//   if (count >= limit) {
+//     clearInterval(timer);
+//   }
+// };
+
+// const timer = setInterval(delay, 1000);
+
+// let count = 5;
+
+// const delay = () => {
+//   console.log(count);
+//   count--;
+
+//   if (count <= 0) {
+//     clearInterval(timer);
+//   }
+// };
+
+// const timer = setInterval(delay, 1000);
+
+// let end = 10;
+// let count = 0;
+// const delay = () => {
+
+//   count+= 2;
+//   console.log(count);
+
+//   if (count === end) {
+//     clearInterval(timer);
+//   }
+// };
+
+// const timer = setInterval(delay, 500);
+
+// let end = 15;
+// let count = 0;
+// const delay = () => {
+//   count += 5;
+//   console.log(count);
+
+//   if (count === end) {
+//     clearInterval(timer);
+//   }
+// };
+
+// const timer = setInterval(delay, 1000);
+
+// let count = 0;
+// let step = 50;
+// const delay = () => {
+//   count += step;
+//   if (count >= 100) {
+//     clearInterval(timer);
+//     console.log(`Tatalt: 100%`);
+
+//   } else {console.log(`Tatalt: ${count}%`);}
+
+// };
+
+// const timer = setInterval(delay, 1000);
+
+// let count = 3;
+
+// const delay = () => {
+//   console.log(count);
+//   count--;
+//   if (count <= 0) {
+//     clearInterval(timer);
+//   }
+
+// };
+// const timer = setInterval(delay, 1000);
+
+// setTimeout(() => {
+//     console.log("Эхэл!");
+
+//   }, 1000*count+1000);
+
+// let distance = 3;
+
+// const delay = (time) => {
+//   setTimeout(() => {
+//     console.log("Хүргэлт эхэллээ");
+
+//     const intervalId = setInterval(() => {
+//       console.log(distance);
+//       distance--;
+
+//       if (distance < 0) {
+//         clearInterval(intervalId);
+//         console.log("Хүргэлт ирлээ");
+//       }
+//     }, 1000);
+//   }, time);
+// };
+// delay(2000);
+
+// let score = 0;
+// let duration = 2600;
+// let count = 1;
+
+// const delay = () => {
+//   const intervalId= setInterval(() => {
+//       score += 10;
+//       console.log(score);
+//       ++count;
+//       if (duration <= 500*count) {
+//       clearInterval(intervalId);
+//       console.log(`Эцсийн оноо ${score}`);
+
+//     }
+//     }, 500);
+
+// }
+// delay();
+
+let pauseAt = 3;
+let end = 6;
+let count = 0;
+
+const delay = () => {
+  const intervalId = setInterval(() => {
+    ++count;
+    console.log(count);
+
+    if (count === pauseAt) {
+      clearInterval(intervalId);
+      setTimeout(() => {
+        console.log("Үргэлжилж байна");
+        const interval2 = setInterval(() => {
+          ++count;
+          console.log(count);
+          if (count === end){
+            clearInterval(interval2)
+          }
+        }, 1000);
+      }, 2000);
+    }
+  }, 1000);
 };
-vallue([1, 2, 3, 4]);
+delay();
